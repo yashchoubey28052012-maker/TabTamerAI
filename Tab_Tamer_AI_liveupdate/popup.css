@@ -1,0 +1,14 @@
+body { font-family: sans-serif; width: 340px; padding: 10px; background: #f7f9fc; color: #111; }
+header { display: flex; align-items: center; gap: 8px; }
+h1 { font-size: 16px; margin: 0; flex-grow: 1; }
+button { padding: 6px 10px; border: none; background: #007bff; color: #fff; border-radius: 4px; cursor: pointer; }
+#groups { margin-top: 10px; max-height: 300px; overflow-y: auto; }
+.group { background: #fff; padding: 6px; border-radius: 6px; margin-bottom: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.1); }
+.group h3 { margin: 0 0 4px 0; }
+.tab { font-size: 12px; cursor: pointer; padding: 2px 0; }
+.switch { position: relative; display: inline-block; width: 40px; height: 20px; }
+.switch input { display:none; }
+.slider { position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; background-color:#ccc; border-radius:20px; }
+.slider:before { position:absolute; content:""; height:14px; width:14px; left:3px; bottom:3px; background:white; transition:.2s; border-radius:50%; }
+input:checked + .slider { background-color:#2196F3; }
+input:checked + .slider:before { transform:translateX(20px); }
