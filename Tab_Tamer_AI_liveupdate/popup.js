@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   darkToggle.addEventListener("change", () => {
     document.body.style.background = darkToggle.checked ? "#111" : "#f7f9fc"
     document.body.style.color = darkToggle.checked ? "#fff" : "#111"
+    document.main.style.background = darkToggle.checked ? "#fff" : "#111"
   })
 
   searchBox.addEventListener("input", () => loadGroups(searchBox.value))
